@@ -1,0 +1,18 @@
+<div class="container ">
+    <div class="mainDiv">
+        <h2>Sistema de Pilha</h2>
+    </div>
+    <br>
+    <div class=" row justify-content-md-center">
+        <div class="col col-lg-3">
+            <form [formGroup]="formulario" (ngSubmit)="transformAsArray()">
+                <div class="form-group">
+                    <label for="expression">Digite alguma expressão aritimética</label>
+                    <input type="text" class="form-control" formControlName="expression">
+                    <br>
+                    <button class="btn btn-outline-light" type="submit">Verificar Expressão</button>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
